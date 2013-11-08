@@ -1,3 +1,13 @@
+
+# Aliase
+########
+
+# colored and paged SVN diff
+alias svndiff='svn diff $* | colordiff | less -r'
+
+# History
+########
+
 # ignore duplicate history entries
 setopt histignoredups
 
