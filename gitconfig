@@ -1,0 +1,16 @@
+[user]
+	name = Friedjoff Trautwein 
+	email = friedjoff.trautwein@geops.de
+[branch]
+	autosetuprebase = always
+[color]
+	ui = auto
+[help]
+	autocorrect = 1
+[alias]
+	co = checkout
+	cm = commit
+	# Show verbose output about tags, branches or remotes
+	tags = tag -l
+	branches = branch -a
+	remotes = remote -v
