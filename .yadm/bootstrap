@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if grep -q fish /etc/shells;
+ then
+     echo "Fish is already active..."
+ else
+     echo /usr/local/bin/fish | sudo tee -a /etc/shells
+     chsh -s /usr/local/bin/fish
+fi
+
+echo "Install brew dependencies..."
+brew bundle --global --verbose
