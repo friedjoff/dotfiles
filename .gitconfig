@@ -16,6 +16,9 @@
 	remotes = remote -v
 [core]
 	excludesfile = ~/.gitignore_global
+[fetch]
+	# Removes branches locally when you do a git pull/fetch if the branches was deleted on the remote.
+	prune = true
 [push]
 	default = simple
 [mergetool "Kaleidoscope"]
